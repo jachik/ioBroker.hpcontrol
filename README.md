@@ -1,7 +1,7 @@
 ![Logo](admin/hpcontrol.png)
 # ioBroker.hpcontrol
 =================
-
+hpcontrol baut eine Verbindung zur Wärmepumpensteuerung auf und liest aktuelle Werte aus. 
 
 ## Changelog
 

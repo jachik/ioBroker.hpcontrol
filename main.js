@@ -302,7 +302,7 @@ function setValue(index, value) {
 
 function loadValues() {
     var client = new net.Socket();
-    client.connect(8888, "192.168.1.133", function () {
+    client.connect(adapter.config.hpport, adapter.config.hpip, function () {
         var buf = Buffer.from([0,0, 11, 188]);
         client.write(buf);
         buf = Buffer.from([0, 0, 0, 0]);
@@ -318,50 +318,19 @@ function loadValues() {
             (data[i + 1] << 16) |
             (data[i] << 24));
 
-//            console.log("I: " + (i/4-3) + " Wert: " + result);
             setValue(i/4-3, result);
         }
     });
 }
 
 function main() {
-    adapter.log.info('LAEUFT');
-
     setupObjects();
 
-    // The adapters config (in the instance object everything under the attribute "native") is accessible via
-    // adapter.config:
-    adapter.log.info('config hpip: ' + adapter.config.hpip);
-    adapter.log.info('config hpport: ' + adapter.config.hpport);
-
-
     // in this hpcontrol all states changes inside the adapters namespace are subscribed
-    adapter.subscribeStates('*');
+    //adapter.subscribeStates('*');
 
     adapter.log.info('INTERVAL GESETZT');
     interval = setInterval(function () {
-        //adapter.log.info('INTERVAL');
-        //adapter.setState('values.ambientTemperature', '17.6');
         loadValues();
     }, 120000);
-
-
-
-    /**
-     *   setState examples
-     *
-     *   you will notice that each setState will cause the stateChange event to fire (because of above subscribeStates cmd)
-     *
-     */
-    /*
-    // the variable testVariable is set to true as command (ack=false)
-    adapter.setState('testVariable', true);
-    adapter.setState('values.ambientTemperature', '17.6');
-    // same thing, but the value is flagged "ack"
-    // ack should be always set to true if the value is received from or acknowledged from the target system
-    adapter.setState('testVariable', {val: true, ack: true});
-
-    // same thing, but the state is deleted after 30s (getState will return null afterwards)
-    adapter.setState('testVariable', {val: true, ack: true, expire: 30});
-    */
 }
