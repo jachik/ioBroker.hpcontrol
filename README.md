@@ -1,7 +1,8 @@
 ![Logo](admin/hpcontrol.png)
 # ioBroker.hpcontrol
 =================
-hpcontrol baut eine Verbindung zur Wärmepumpensteuerung auf und liest aktuelle Werte aus. 
+## Description
+hpcontrol reads out values from a heat pump und imports them into iobroker.  
 
 ## Changelog
 
