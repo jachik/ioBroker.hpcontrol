@@ -276,16 +276,16 @@ function setValue(index, value) {
             adapter.setState('values.18_setHotWaterTemperature', {val: value/10, ack: true});
             break;
         case 56:
-            adapter.setState('values.56_counterWorkingPeriodVD1', {val: value, ack: true});
+            adapter.setState('values.56_counterWorkingPeriodVD1', {val: (value/3600).toFixed(2), ack: true});
             break;
         case 57:
             adapter.setState('values.57_counterWorkingImpuls', {val: value, ack: true});
             break;
         case 64:
-            adapter.setState('values.64_workingPeriodHeating', {val: value, ack: true});
+            adapter.setState('values.64_workingPeriodHeating', {val: (value/3600).toFixed(2), ack: true});
             break;
         case 65:
-            adapter.setState('values.65_workingPeriodHotWater', {val: value, ack: true});
+            adapter.setState('values.65_workingPeriodHotWater', {val: (value/3600).toFixed(2), ack: true});
             break;
         case 151:
             adapter.setState('values.151_counterHeatQuantityHeating', {val: value, ack: true});
@@ -320,17 +320,17 @@ function loadValues() {
 
             setValue(i/4-3, result);
         }
+        adapter.log.info('Values received');
     });
 }
 
 function main() {
     setupObjects();
 
-    // in this hpcontrol all states changes inside the adapters namespace are subscribed
     //adapter.subscribeStates('*');
-
-    adapter.log.info('INTERVAL GESETZT');
+    loadValues();
     interval = setInterval(function () {
         loadValues();
     }, 120000);
+    adapter.log.info('ioBroker.hpcontrol started');
 }
