@@ -2,12 +2,26 @@
 # ioBroker.hpcontrol
 =================
 ## Description
-hpcontrol reads out values from a heat pump und imports them into iobroker.  
+This ioBroker adapter allows to monitor (monitor at the moment, control in the future) heat pumps from Buderus, Alpha Innotec and some others. This adapter is at this moment in a pre alpha release, but it should do his job (some values may be wrong calculated). The adapter populates the following Values:
+-	Return temperature (Rücklauf)
+-	Underfloor heating temperature (Temperatur der Fußbodenheizung)
+-	Counter heat quantity heating (Wärmemenge Heizung)
+-	Counter heat quantity hot water (Wärmemenge Brauchwasser)
+-	Rate of flow (Durchfluss)
+-	Ambient temperature (Außentemperatur)
+-	Average ambient temperature (Durchschnittliche Außenemperatur)
+-	Actual hot water temperature (IST-Warmwassertemperatur)
+-	Set hot water temperature (SOLL-Warmwassertemperatur)
+-	Counter working period VD1 (Arbeitsstunden Verdichter 1)
+-	Counter working impuls (Impulse Verdichter 1)
+-	Working period heating (Arbeitsstunden Heizung)
+-	Working period hot water (Arbeitsstunden Warmwasser)
+The configuration consists of the IP of the heat pump and the port (usually 8888 or 8889).
 
 ## Changelog
 
 #### 0.2.0
-* (bluefox) initial release
+* (jachik) initial release
 
 ## License
 The MIT License (MIT)
