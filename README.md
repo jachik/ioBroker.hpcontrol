@@ -16,6 +16,7 @@ This ioBroker adapter allows to monitor (monitor at the moment, control in the f
 -	Counter working impuls (Impulse Verdichter 1)
 -	Working period heating (Arbeitsstunden Heizung)
 -	Working period hot water (Arbeitsstunden Warmwasser)
+
 The configuration consists of the IP of the heat pump and the port (usually 8888 or 8889).
 
 ## Changelog
