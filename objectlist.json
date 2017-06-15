@@ -56,7 +56,7 @@
     "54" : { "name" : "MZ2out", "type" : "IO" },
     "55" : { "name" : "MA2out", "type" : "IO" },
     "56" : { "name" : "Zaehler_BetrZeitVD1", "type" : "SECONDS"},
-    "57" : { "name" : "Zaehler_BetrZeitImpVD1", "type" : "SECONDS"},
+    "57" : { "name" : "Zaehler_BetrZeitImpVD1", "type" : "IMPULSE"},
     "58" : { "name" : "Zaehler_BetrZeitVD2", "type" : "SECONDS"},
     "59" : { "name" : "Zaehler_BetrZeitImpVD2", "type" : "SECONDS"},
     "60" : { "name" : "Zaehler_BetrZeitZWE1", "type" : "SECONDS"},

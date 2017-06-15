@@ -1,6 +1,10 @@
 ![Logo](admin/hpcontrol.png)
 # ioBroker.hpcontrol
 =================
+[![NPM version](https://img.shields.io/npm/v/iobroker.hpcontrol.svg)](https://www.npmjs.com/package/iobroker.hpcontrol)
+[![Travis CI](https://travis-ci.org/jachik/ioBroker.hpcontrol.svg?branch=master)](https://travis-ci.org/jachik/ioBroker.hpcontrol)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/2fquda7xh5xqb0u2?svg=true)](https://ci.appveyor.com/project/jachik/iobroker-hpcontrol)
+
 ## Description
 This ioBroker adapter allows to monitor (monitor at the moment, control in the future) heat pumps from Buderus, Alpha Innotec and some others. This adapter is at this moment in a pre alpha release, but it should do his job (some values may be wrong calculated).
 
@@ -9,6 +13,8 @@ The implementation is inspired by Frank Motzkau and his project CCU.IO Luxtronik
 The configuration consists of the IP of the heat pump and the port (usually 8888 or 8889).
 
 ## Changelog
+#### 0.4.0
+* (jachik) integrated in npm
 #### 0.3.0
 * (jachik) completely revised edition
 #### 0.2.0

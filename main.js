@@ -120,6 +120,7 @@ function setupObjects() {
                 case "ANALOG":
                 case "ERROR":
                 case "COUNTER":
+                case "IMPULSE":
                     type = 'number';
                     role = 'value';
                     break;
@@ -186,6 +187,7 @@ function setValue(index, value) {
             case "COUNTER":
             case "FLOWRATE":
             case "HEATQUANTITY":
+            case "IMPULSE":
                 state = value;
                 break;
             case "IP":
