@@ -1,6 +1,6 @@
 {
   "name": "iobroker.hpcontrol",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ioBroker hpcontrol Adapter",
   "author": {
     "name": "Jacek Schikora",
@@ -24,16 +24,15 @@
     "type": "git",
     "url": "https://github.com/jachik/iobroker.hpcontrol"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-      "grunt": "^0.4.5",
-      "grunt-replace": "^0.9.3",
-      "grunt-contrib-jshint": "^0.11.2",
-      "grunt-jscs": "^2.0.0",
-      "grunt-http": "^1.6.0",
-      "mocha": "^2.3.4",
-      "chai": "^3.4.1"
+    "grunt": "^0.4.5",
+    "grunt-replace": "^0.9.3",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-jscs": "^2.0.0",
+    "grunt-http": "^1.6.0",
+    "mocha": "^2.3.4",
+    "chai": "^3.4.1"
   },
   "main": "main.js",
   "scripts": {
