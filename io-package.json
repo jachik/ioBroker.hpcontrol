@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "hpcontrol",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "news": {
+            ".0.0.7": {
+                "en": "Object-IDs changed",
+                "de": "Objekt-IDs geändert"
+            },
             ".0.0.6": {
               "en": "completely revised edition",
               "de": "Vollständig überarbeitete Version"

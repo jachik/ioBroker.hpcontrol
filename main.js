@@ -156,9 +156,20 @@ function setupObjects() {
                 },
                 native: {}
             }
-            adapter.setObjectNotExists('values.'+i+'_'+objectList[i].name, obj);
+
+            var id = addPrefix(i);
+
+            adapter.setObjectNotExists('values.'+id, obj);
         }
     }
+}
+
+function addPrefix(index) {
+    var result = index.toString();
+    while(result.length<3) {
+        result = "0"+result;
+    }
+    return result;
 }
 
 // convert integer to IP
@@ -217,7 +228,9 @@ function setValue(index, value) {
                 break;
 
         }
-        adapter.setState('values.'+index+'_'+objectList[index].name, {val: state, ack: true});
+        var id = addPrefix(index);
+
+        adapter.setState('values.'+id, {val: state, ack: true});
     }
 }
 

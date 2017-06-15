@@ -139,7 +139,7 @@
             "Schwimmbad",
             "Heizen Ext.",
             "Brauchwasser Ext.",
-            "15",
+            "Störung",
             "Durchflussueberwachung",
             "ZWE Betrieb"
         ]
@@ -158,7 +158,7 @@
     "131" : { "name" : "StatusSlave_3" },
     "132" : { "name" : "StatusSlave_4" },
     "133" : { "name" : "StatusSlave_5" },
-    "134" : { "name" : "AktuelleTimeStamp" },
+    "134" : { "name" : "AktuelleTimeStamp", "type":"TIMESTAMP" },
     "135" : { "name" : "SH_MK3" },
     "136" : { "name" : "Sollwert_TVL_MK3", "type" : "TEMPERATURE" },
     "137" : { "name" : "Temperatur_TFB3", "type" : "TEMPERATURE" },
