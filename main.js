@@ -138,6 +138,10 @@ function setupObjects() {
                     type = 'string';
                     role = 'value.datetime';
                     break;
+                case "ENUM":
+                    type = 'string';
+                    role = 'value';
+                    break;
                 default:
                     adapter.log.info("Undefined type in setup: "+i+":"+objectList[i].type);
                     break;
@@ -238,7 +242,12 @@ function loadValues() {
 
             setValue(i/4-3, result);
         }
+        client.end();
         adapter.log.info('Values received');
+    });
+
+    client.on('error', function(data) {
+       adapter.log.error("Clientsocket error.")
     });
 }
 
