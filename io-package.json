@@ -29,9 +29,9 @@
         "mode": "daemon",
         "icon": "hpcontrol.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.hpcontrol/master/admin/hpcontrol.png",
+        "extIcon": "https://raw.githubusercontent.com/jachik/iobroker.hpcontrol/master/admin/hpcontrol.png",
         "keywords": ["hpcontrol", "buderus", "alpha innotec"],
-        "readme": "https://github.com/ioBroker/ioBroker.hpcontrol/blob/master/README.md",
+        "readme": "https://github.com/jachik/iobroker.hpcontrol/blob/master/README.md",
         "loglevel": "info",
         "type": "hardware"
     },
