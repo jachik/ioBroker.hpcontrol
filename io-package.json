@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "hpcontrol",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "news": {
-            ".0.03": {
+            ".0.04": {
               "en": "completely revised edition",
               "de": "Vollständig überarbeitete Version"
             },
