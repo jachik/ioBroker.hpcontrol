@@ -1,6 +1,7 @@
 ![Logo](admin/hpcontrol.png)
 # ioBroker.hpcontrol
 =================
+
 [![NPM version](https://img.shields.io/npm/v/iobroker.hpcontrol.svg)](https://www.npmjs.com/package/iobroker.hpcontrol)
 [![Travis CI](https://travis-ci.org/jachik/ioBroker.hpcontrol.svg?branch=master)](https://travis-ci.org/jachik/ioBroker.hpcontrol)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/2fquda7xh5xqb0u2?svg=true)](https://ci.appveyor.com/project/jachik/iobroker-hpcontrol)
