@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "hpcontrol",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "news": {
+            ".0.03": {
+              "en": "completely revised edition",
+              "de": "Vollständig überarbeitete Version"
+            },
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version",

@@ -1,6 +1,6 @@
 {
   "name": "iobroker.hpcontrol",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ioBroker hpcontrol Adapter",
   "author": {
     "name": "Jacek Schikora",
