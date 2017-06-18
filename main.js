@@ -87,6 +87,14 @@ adapter.on('ready', function () {
 
 // Setup missing objects after start.
 function setupObjects() {
+    adapter.setObjectNotExists('values', {
+        type: 'channel',
+        common: {
+            name: 'values'
+        },
+        native: {}
+    });
+
     var count = Object.keys(objectList).length;
     for (var i=0; i<count; i++) {
         if (isset(objectList[i]) &&
