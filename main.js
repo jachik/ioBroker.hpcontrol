@@ -32,7 +32,7 @@
 "use strict";
 
 var utils =    require(__dirname + '/lib/utils'); // Get common adapter utils
-var adapter = utils.adapter('hpcontrol');
+var adapter = utils.Adapter('hpcontrol');
 var net = require('net');
 
 var interval;
