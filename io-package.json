@@ -29,6 +29,7 @@
             "fr": "ioBroker adaptateur modèle",
             "nl": "ioBroker Hpcontrol Adapter"
         },
+        "license": "MIT",
         "platform": "Javascript/Node.js",
         "mode": "daemon",
         "icon": "hpcontrol.png",
