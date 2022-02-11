@@ -31,8 +31,8 @@
 /*jslint node: true */
 "use strict";
 
-var utils =    require(__dirname + '/lib/utils'); // Get common adapter utils
-var adapter = utils.adapter('hpcontrol');
+var utils = require('@iobroker/adapter-core'); // Get common adapter utils
+var adapter = utils.Adapter('hpcontrol');
 var net = require('net');
 
 var interval;

@@ -1,6 +1,6 @@
 ![Logo](admin/hpcontrol.png)
 # ioBroker.hpcontrol
-=================
+![Number of Installations](http://iobroker.live/badges/hpcontrol-installed.svg) ![Number of Installations](http://iobroker.live/badges/hpcontrol-stable.svg) =================
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.hpcontrol.svg)](https://www.npmjs.com/package/iobroker.hpcontrol)
 [![Travis CI](https://travis-ci.org/jachik/ioBroker.hpcontrol.svg?branch=master)](https://travis-ci.org/jachik/ioBroker.hpcontrol)

@@ -8,8 +8,8 @@
                 "de": "Objekt-IDs geändert"
             },
             ".0.0.6": {
-              "en": "completely revised edition",
-              "de": "Vollständig überarbeitete Version"
+                "en": "completely revised edition",
+                "de": "Vollständig überarbeitete Version"
             },
             "0.0.1": {
                 "en": "initial adapter",
@@ -29,21 +29,30 @@
             "fr": "ioBroker adaptateur modèle",
             "nl": "ioBroker Hpcontrol Adapter"
         },
+        "license": "MIT",
         "platform": "Javascript/Node.js",
         "mode": "daemon",
         "icon": "hpcontrol.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/jachik/iobroker.hpcontrol/master/admin/hpcontrol.png",
-        "keywords": ["hpcontrol", "buderus", "alpha innotec"],
+        "keywords": [
+            "hpcontrol",
+            "buderus",
+            "alpha innotec"
+        ],
         "readme": "https://github.com/jachik/iobroker.hpcontrol/blob/master/README.md",
         "loglevel": "info",
-        "type": "hardware"
+        "type": "hardware",
+        "authors": [
+            {
+                "name": "Jacek Schikora",
+                "email": "jacek@uni-koblenz.de"
+            }
+        ]
     },
     "native": {
         "hpip": "192.168.1.133",
         "hpport": 8888
     },
-    "objects": [
-
-    ]
+    "objects": []
 }
